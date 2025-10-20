@@ -229,7 +229,7 @@ Este proyecto mantiene la licencia del proyecto original.
 ## 👤 Créditos
 
 - **Proyecto Original**: [karma9874](https://github.com/karma9874/AndroRAT)
-- **Fork y Actualizaciones v2.0**: [Darkrevengehack]
+- **Fork y Actualizaciones v2.0**: Darkrevengehack
 - **Herramientas Utilizadas**:
   - [Uber APK Signer](https://github.com/patrickfav/uber-apk-signer) por Patrick Favre
   - [Apktool](https://github.com/iBotPeaches/Apktool)
