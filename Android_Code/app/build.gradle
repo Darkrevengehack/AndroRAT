@@ -1,0 +1,73 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    // Actualizado de SDK 29 a 34 (Android 14 - versión actual)
+    compileSdkVersion 34
+    buildToolsVersion "34.0.0"
+
+    defaultConfig {
+        applicationId "com.example.reverseshell2"
+        
+        // minSdkVersion actualizado de 16 a 21 (Android 5.0)
+        // Esto descarta dispositivos muy antiguos pero mejora compatibilidad moderna
+        minSdkVersion 21
+        
+        // targetSdkVersion actualizado de 22 a 34
+        targetSdkVersion 34
+        
+        versionCode 2
+        versionName "2.0-Termux"
+        
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            debuggable false
+        }
+        debug {
+            debuggable true
+            minifyEnabled false
+        }
+    }
+
+    // Opciones de lint mejoradas
+    lintOptions {
+        checkReleaseBuilds false
+        // Ignorar warnings específicos comunes en Termux
+        disable 'MissingTranslation', 'ExtraTranslation'
+    }
+
+    // Compatibilidad mejorada
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    // Namespace para evitar conflictos
+    namespace 'com.example.reverseshell2'
+}
+
+dependencies {
+    // Actualización de dependencias core
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    
+    // Dependencias de utilidad
+    implementation 'commons-io:commons-io:2.15.1'
+    
+    // Screenshot library (actualizada)
+    implementation 'eu.bolt:screenshotty:1.0.2'
+    
+    // Archivos JAR locales
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Testing - actualizado
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

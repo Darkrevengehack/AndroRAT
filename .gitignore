@@ -1,0 +1,98 @@
+# Keystores y certificados privados - NUNCA subir
+*.jks
+*.keystore
+*.p12
+my-release-key.jks
+new-release-key.jks
+debug.keystore
+
+# APKs generados
+*.apk
+!example.apk
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# Gradle
+.gradle/
+Android_Code/.gradle/
+Android_Code/app/build/
+Android_Code/build/
+*.iml
+.idea/
+local.properties
+
+# Logs
+*.log
+build.log
+
+# Dumps (archivos capturados)
+Dumps/*
+!Dumps/.gitkeep
+
+# Temporales
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+*.bak
+*.backup
+
+# Scripts temporales
+rebuild_sign_align.sh
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Android Studio
+*.iml
+.idea/
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+# Ngrok
+ngrok
+*.ngrok
+
+# Outputs temporales
+signed_output/
+apk_decompiled/
+output_directory*/
+temp_rebuild*/
